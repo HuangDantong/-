@@ -1,0 +1,80 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Patch
+
+# 1. 环境配置与中文字体
+plt.rcParams['font.sans-serif'] = ['SimHei'] 
+plt.rcParams['axes.unicode_minus'] = False
+
+# 2. 准备数据
+quarters = ['2021Q1', 'Q2', 'Q3', 'Q4', '2022Q1', 'Q2']
+sales = [3121, 4086, 4321, 4601, 4936, 4231]
+profits = [1020, 1421, 1502, 1623, 1781, 1432]
+
+# 3. 创建画布并设置背景色
+bg_color = '#1a1e36'        # 深蓝背景
+blue_color = '#0099e5'      # 销售额柱子颜色（亮蓝）
+red_color = '#e04f66'       # 利润额柱子颜色（粉红）
+text_color = '#ffffff'      # 白色文字
+sub_text_color = '#b0b4c6'  # 浅灰文字/注释
+line_color = '#3b3e5a'      # 底部轴线颜色
+
+fig, ax = plt.subplots(figsize=(12, 6.5), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 4. 绘制分组柱状图（实现部分重叠）
+x = np.arange(len(quarters))
+width = 0.35 # 加宽柱子以便重叠
+
+# 绘制销售额（蓝色柱子向左偏移）
+bars1 = ax.bar(x - 0.1, sales, width, color=blue_color, zorder=3)
+
+# 绘制利润额（粉色柱子向右偏移，zorder=4保证压在蓝色上面形成交叠）
+bars2 = ax.bar(x + 0.1, profits, width, color=red_color, zorder=4)
+
+# 5. 添加柱顶数据标签
+for bar in bars1:
+    height = bar.get_height()
+    ax.text(bar.get_x() + bar.get_width() / 2, height + 80, str(int(height)), 
+            ha='center', va='bottom', color=text_color, fontsize=11)
+
+for bar in bars2:
+    height = bar.get_height()
+    ax.text(bar.get_x() + bar.get_width() / 2, height + 80, str(int(height)), 
+            ha='center', va='bottom', color=text_color, fontsize=11)
+
+# 6. 添加自定义图例（带彩色边框的透明方块）
+legend_elements = [
+    Patch(facecolor='none', edgecolor=blue_color, label='销售额', linewidth=1.5),
+    Patch(facecolor='none', edgecolor=red_color, label='利润额', linewidth=1.5)
+]
+ax.legend(handles=legend_elements, loc='upper right', bbox_to_anchor=(0.95, 0.75),
+          facecolor='none', edgecolor='none', labelcolor=text_color, fontsize=11,
+          handlelength=1.5, handleheight=1.2)
+
+# 7. 添加标题、副标题和底部注释（保留了加粗效果）
+fig.text(0.08, 0.88, '2021年至今季度销售额(万)和利润额(万)', 
+         fontsize=24, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.81, '2022年第二季度销售额首次出现下降，降幅达到15%', 
+         fontsize=15, color=sub_text_color, ha='left')
+fig.text(0.08, 0.04, '*注：数据来源于公司销售系统，统计日期截至2022.06.30', 
+         fontsize=10, color=sub_text_color, ha='left')
+
+# 8. 设置坐标轴样式
+ax.set_yticks([])
+ax.set_ylim(0, 6000) 
+
+ax.set_xticks(x)
+ax.set_xticklabels(quarters, color=text_color, fontsize=13)
+ax.tick_params(axis='x', length=0, pad=10)
+
+# 隐藏顶部、右侧、左侧边框，保留底部边框
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.spines['bottom'].set_color(line_color)
+ax.spines['bottom'].set_linewidth(1.5)
+
+# 9. 调整布局并弹窗显示
+fig.subplots_adjust(left=0.08, right=0.92, top=0.75, bottom=0.12)
+plt.show()

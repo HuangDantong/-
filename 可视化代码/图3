@@ -1,0 +1,107 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import FancyBboxPatch, Polygon
+from matplotlib.colors import LinearSegmentedColormap
+
+# 1. 设置中文字体
+plt.rcParams['font.sans-serif'] = ['SimHei'] 
+plt.rcParams['axes.unicode_minus'] = False
+
+# 2. 准备数据
+items = ['口红', '面膜', '隔离', '防晒', '精华', '面霜']
+sales = [653, 523, 648, 856, 714, 785]
+
+# 3. 创建画布并设置背景色
+bg_color = '#1e213a'        # 深蓝背景
+text_color = '#ffffff'      # 白色文字
+sub_text_color = '#b0b4c6'  # 浅灰文字
+grid_color = '#3b3e5a'      # 虚线网格颜色
+label_bg_color = '#17365d'  # 标签框深蓝色
+
+fig, ax = plt.subplots(figsize=(10, 6.5), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 关键：设置坐标轴边界（给左侧留出-0.6，防止柱子覆盖Y轴）
+ax.set_xlim(-0.6, len(items) - 0.4)
+ax.set_ylim(0, 1200)
+
+# 4. 绘制渐变圆角柱状图（核心重构部分）
+# 构造渐变色：底部深蓝 -> 顶部亮青
+cmap = LinearSegmentedColormap.from_list("custom_gradient", ["#0f80e0", "#00e5ff"])
+# 构造渐变矩阵 (256个像素点的过渡)
+gradient = np.linspace(0, 1, 256).reshape(256, 1)
+gradient = np.tile(gradient, (1, 10))
+
+for i, val in enumerate(sales):
+    # 设定柱子的宽度和左边缘
+    width = 0.28
+    left = i - width / 2
+    
+    # 步骤1：先绘制渐变色图
+    # extent 定义渲染范围：左边缘、右边缘、底部0、顶部val
+    im = ax.imshow(gradient, aspect='auto', cmap=cmap, 
+                   extent=(left, left + width, 0, val), zorder=3)
+    
+    # 步骤2：创建圆角矩形路径（这里将 rounding_size 调大，保证圆角明显）
+    # boxstyle="round" + rounding_size=0.12 确保顶部有非常圆润的弧度
+    patch = FancyBboxPatch((left, 0), width, val, 
+                           boxstyle="round,pad=0,rounding_size=0.12", 
+                           ec="none", fc="none", transform=ax.transData)
+    
+    # 步骤3：将渐变图裁剪为圆角形状（致命错误修复点）
+    im.set_clip_path(patch)
+
+    # 5. 绘制圆角数据标签框 + 小三角
+    box_y = val + 50       # 标签框距离柱子顶部的距离
+    box_height = 75        # 标签框高度
+    box_width = 0.45       # 标签框宽度
+    
+    # 标签框圆角背景
+    label_box = FancyBboxPatch((i - box_width/2, box_y), box_width, box_height,
+                               boxstyle="round,pad=0.05,rounding_size=0.1",
+                               ec="none", fc=label_bg_color, zorder=5)
+    ax.add_patch(label_box)
+    
+    # 数值文字
+    ax.text(i, box_y + box_height/2, str(val), 
+            ha='center', va='center', color=text_color, fontsize=12, zorder=6)
+    
+    # 倒三角
+    triangle = Polygon([(i - 0.05, box_y), (i + 0.05, box_y), (i, val + 15)],
+                       closed=True, color=label_bg_color, zorder=4)
+    ax.add_patch(triangle)
+
+# 6. 添加标题、副标题和底部注释
+fig.text(0.08, 0.88, '3月商品销量对比', 
+         fontsize=24, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.81, '防晒销量最多，3月销量856；面膜最少，3月销量523', 
+         fontsize=15, color=sub_text_color, ha='left')
+fig.text(0.08, 0.04, '*注：数据来源于公司销售系统，统计日期截至2022.03.31', 
+         fontsize=10, color=sub_text_color, ha='left')
+
+# 7. 设置坐标轴刻度和网格线
+# Y轴刻度
+y_ticks = [0, 200, 400, 600, 800, 1000, 1200]
+ax.set_yticks(y_ticks)
+ax.set_yticklabels([str(y) for y in y_ticks], color=text_color, fontsize=11)
+
+# 横向虚线网格
+ax.yaxis.grid(True, linestyle='--', color=grid_color, linewidth=1.5, zorder=0)
+
+# X轴标签
+ax.set_xticks(range(len(items)))
+ax.set_xticklabels(items, color=text_color, fontsize=13)
+ax.tick_params(axis='x', length=0, pad=10)
+ax.tick_params(axis='y', length=0, pad=10)
+
+# 8. 设置边框样式
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False) # 隐藏左侧竖线，只保留刻度数字
+ax.spines['bottom'].set_color(grid_color)
+ax.spines['bottom'].set_linewidth(1.5)
+
+# 9. 调整布局并显示
+fig.subplots_adjust(left=0.1, right=0.92, top=0.75, bottom=0.12)
+
+plt.show()

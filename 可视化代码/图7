@@ -1,0 +1,81 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 1. 环境配置
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei'] # 使用微软雅黑，自带粗体支持
+plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
+plt.rcParams['hatch.linewidth'] = 1.5        # 调整条纹线条的粗细，让纹理更清晰
+
+# 2. 准备数据
+regions = ['华南', '华北', '东北', '西北', '华东']
+ratio_2022 = [0.09, 0.13, 0.18, 0.31, 0.36]
+ratio_2021 = [0.05, 0.12, 0.19, 0.26, 0.42]
+
+# 生成Y轴坐标
+y_pos = np.arange(len(regions))
+
+# 3. 创建画布并设置背景色
+bg_color = '#0d1226'
+blue_color = '#0099E5'      # 2022年柱子条纹和边框颜色（亮蓝）
+red_color = '#E04F66'       # 2021年柱子条纹和边框颜色（粉红）
+text_color = '#ffffff'      # 白色文字
+sub_text_color = '#b0b4c6'  # 浅灰文字/注释
+
+fig, ax = plt.subplots(figsize=(12, 6.5), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 4. 绘制左右两侧透明底彩色条纹条形
+bar_height = 0.35
+gap = 0.05  # 中间留白的宽度，让左右柱子分开
+
+# 绘制左侧柱子（2022年）：柱子从 -gap 开始向左延伸
+bars_2022 = ax.barh(y_pos, [-v for v in ratio_2022], left=-gap, height=bar_height, 
+                    facecolor='none', edgecolor=blue_color, hatch='||||', zorder=3)
+
+# 绘制右侧柱子（2021年）：柱子从 gap 开始向右延伸
+bars_2021 = ax.barh(y_pos, ratio_2021, left=gap, height=bar_height, 
+                    facecolor='none', edgecolor=red_color, hatch='||||', zorder=3)
+
+# 5. 添加柱子外部的数据标签（百分比位置修复）
+# 左侧标签（文字位于蓝色条形左侧外部，右对齐）
+for i, v in enumerate(ratio_2022):
+    # x坐标 = 起点(-gap) - 长度(v) - 偏移量(0.01)，让文字在柱子最左侧
+    # ha='right' 表示文字右对齐，文字向左延伸
+    ax.text(-gap - v - 0.01, i, f'{v*100:.0f}%', ha='right', va='center', 
+            color=text_color, fontsize=13, zorder=4)
+
+# 右侧标签（文字位于红色条形右侧外部，左对齐）
+for i, v in enumerate(ratio_2021):
+    # x坐标 = 起点(gap) + 长度(v) + 偏移量(0.01)，让文字在柱子最右侧
+    # ha='left' 表示文字左对齐，文字向右延伸
+    ax.text(gap + v + 0.01, i, f'{v*100:.0f}%', ha='left', va='center', 
+            color=text_color, fontsize=13, zorder=4)
+
+# 6. 添加中间的区域名称（完美落在 gap 区间内）
+for i, region in enumerate(regions):
+    ax.text(0, i, region, ha='center', va='center', color=text_color, fontsize=13, zorder=5)
+
+# 7. 添加主标题、副标题和底部注释
+fig.text(0.08, 0.88, '2022年第一季度销售目标完成情况', 
+         fontsize=22, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.82, '华东区域完成率最高达到36%，但是相比去年的42%有所下降', 
+         fontsize=14, color=sub_text_color, ha='left')
+fig.text(0.08, 0.05, '*注：数据来源于公司销售系统，统计日期截至2022.03.31', 
+         fontsize=11, color=sub_text_color, ha='left')
+
+# 8. 设置坐标轴样式（隐藏所有边框和刻度）
+ax.set_xlim(-0.5, 0.5)  # 调整X轴范围，适应左右比例数据和中间留白
+ax.set_ylim(-0.8, 4.8)  # 调整Y轴范围，留出上下空白
+
+ax.set_xticks([])
+ax.set_yticks([])
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+
+# 9. 调整布局并弹窗显示
+fig.subplots_adjust(left=0.08, right=0.92, top=0.75, bottom=0.12)
+
+# 直接弹窗显示
+plt.show()

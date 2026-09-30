@@ -1,0 +1,73 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 1. 设置中文字体，防止中文显示为方块
+plt.rcParams['font.sans-serif'] = ['SimHei'] 
+plt.rcParams['axes.unicode_minus'] = False
+
+# 2. 准备数据
+regions = ['华北', '华南', '东北', '西北', '西南', '华东']
+sales = [2354, 1902, 3524, 2698, 2896, 2563]
+avg_value = 2656  # 图片中的平均值标签
+
+# 3. 创建画布并设置背景色
+# 提取原图深蓝色背景的近似色值
+bg_color = '#1e213a' 
+bar_color = '#0f80e0'
+line_color = '#f5b942'
+text_color = '#ffffff'
+sub_text_color = '#c0c6d6'
+
+fig, ax = plt.subplots(figsize=(10, 6.5), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 4. 绘制柱状图
+# 设置柱子宽度为 0.25 左右以匹配原图比例
+bars = ax.bar(regions, sales, width=0.25, color=bar_color, zorder=3)
+
+# 5. 添加柱状图上方的数据标签
+for bar in bars:
+    height = bar.get_height()
+    ax.text(bar.get_x() + bar.get_width() / 2, height + 80, 
+            str(int(height)), 
+            ha='center', va='bottom', 
+            color=text_color, fontsize=12)
+
+# 6. 添加平均值横线及文字
+# 画线
+ax.axhline(y=avg_value, color=line_color, linewidth=2, zorder=4)
+# 添加“平均值：2656”文字
+ax.text(len(regions) - 0.5, avg_value + 50, f'平均值：{avg_value}', 
+        color=line_color, fontsize=12, ha='center', va='bottom')
+
+# 7. 添加主标题和副标题
+# 使用 fig.text 以便更精确地控制位置（坐标基于比例 0~1）
+fig.text(0.08, 0.88, '3月各区域销量分布', 
+         fontsize=24, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.81, '东北销量最多占总销量的22%，华南销量最低', 
+         fontsize=15, color=sub_text_color, ha='left')
+
+# 8. 添加底部注释
+fig.text(0.08, 0.04, '*注：数据来源于公司销售系统，统计日期截至2022.03.31', 
+         fontsize=10, color=sub_text_color, ha='left')
+
+# 9. 设置坐标轴样式
+# 隐藏 Y 轴刻度和标签
+ax.set_yticks([])
+ax.set_ylim(0, 4200) # 调整Y轴上限留出空间
+
+# 设置 X 轴标签字体大小和颜色
+ax.tick_params(axis='x', colors=sub_text_color, labelsize=13, length=0)
+
+# 隐藏顶部、右侧、左侧边框，保留底部边框
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.spines['bottom'].set_color(sub_text_color)
+ax.spines['bottom'].set_linewidth(1)
+
+# 10. 调整布局边距
+fig.subplots_adjust(left=0.08, right=0.92, top=0.75, bottom=0.12)
+
+# 11. 显示图片
+plt.show()

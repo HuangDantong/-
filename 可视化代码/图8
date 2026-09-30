@@ -1,0 +1,93 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 1. 环境配置
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei'] # 使用微软雅黑，自带粗体支持
+plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
+
+# 2. 准备数据（数据顺序从下到上，以匹配原图从上到下的视觉）
+regions = ['华北', '华南', '东北', '西北', '西南', '华东']
+
+# 销量（深蓝条）
+sales = [4321, 1946, 1536, 1872, 1369, 2109]
+# 占位1（浅蓝条），用来补齐到最大长度 4321
+placeholder = [0, 2375, 2785, 2449, 2952, 2212]
+# 同比去年（红褐条），保留负号
+yoy = [-0.136, -0.208, -0.093, -0.159, -0.179, -0.058]
+
+# 生成Y轴坐标
+y_pos = np.arange(len(regions))
+
+# 3. 创建画布并设置背景色
+bg_color = '#1a1e36'        # 深蓝背景
+dark_blue = '#0d4c85'       # 销量条实心颜色
+light_blue = '#8db6d9'      # 占位条实心颜色
+red_color = '#b63a42'       # 同比条实心颜色
+text_color = '#ffffff'      # 白色文字
+sub_text_color = '#b0b4c6'  # 浅灰文字/注释
+
+fig, ax = plt.subplots(figsize=(12, 6.5), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 4. 绘制左侧销量与占位柱（无缝拼接）
+bar_height = 0.6 # 柱子高度
+
+# 绘制左侧深蓝条（销量）
+ax.barh(y_pos, sales, height=bar_height, color=dark_blue, zorder=3)
+
+# 绘制中间浅蓝条（占位），利用 left=sales 紧接在销量条右侧
+ax.barh(y_pos, placeholder, left=sales, height=bar_height, color=light_blue, zorder=3)
+
+# 5. 绘制右侧同比柱（核心修复：紧贴蓝色柱子）
+# 红色柱子的起点 = 销量 + 占位1
+red_starts = [s + p for s, p in zip(sales, placeholder)]
+
+# 同比数值的绝对值，乘以 10000 作为条形的宽度
+red_width = [abs(v) * 10000 for v in yoy]
+
+# 绘制红褐条（实心），left 接收一个列表，确保每一行的红条都紧贴浅蓝条的右端
+ax.barh(y_pos, red_width, left=red_starts, height=bar_height, 
+        color=red_color, zorder=3)
+
+# 6. 添加数据标签
+# 左侧销量文字（深蓝条内部靠右侧）
+for i, v in enumerate(sales):
+    ax.text(v - 200, i, str(v), ha='right', va='center', 
+            color=text_color, fontsize=12, zorder=4)
+
+# 右侧同比文字（红褐条内部居中）
+for i, v in enumerate(yoy):
+    # 文字位置 = 红条起点 + 宽度的一半
+    ax.text(red_starts[i] + red_width[i]/2, i, f'{v*100:.1f}%', ha='center', va='center', 
+            color=text_color, fontsize=12, zorder=4)
+
+# 7. 添加最左侧的区域名称
+for i, region in enumerate(regions):
+    # x坐标设为 -500 左右，空出左侧空间
+    ax.text(-500, i, region, ha='left', va='center', 
+            color=text_color, fontsize=13, zorder=5)
+
+# 8. 添加主标题、副标题和底部注释
+fig.text(0.08, 0.88, '2021年各区域销量及同比情况', 
+         fontsize=24, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.82, '各区域商品销量同比去年均有下降，其中华南下降最多，同比下降20.8%', 
+         fontsize=14, color=sub_text_color, ha='left')
+fig.text(0.08, 0.05, '*注：数据来源于公司销售系统，统计日期截至2022.01.01', 
+         fontsize=11, color=sub_text_color, ha='left')
+
+# 9. 设置坐标轴样式（隐藏刻度、边框）
+ax.set_xlim(-800, 8000) # 根据数据范围调整X轴，最大值为4321+2080=6401，留出右侧边距
+ax.set_ylim(-0.8, 5.8)   # 调整Y轴，留出上下空白
+
+ax.set_xticks([])
+ax.set_yticks([])
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+
+# 10. 调整布局并弹窗显示
+fig.subplots_adjust(left=0.08, right=0.92, top=0.75, bottom=0.12)
+
+# 直接弹窗显示
+plt.show()

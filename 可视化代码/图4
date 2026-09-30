@@ -1,0 +1,97 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import FancyBboxPatch, Polygon
+
+# 1. 环境配置与中文字体
+plt.rcParams['font.sans-serif'] = ['SimHei'] 
+plt.rcParams['axes.unicode_minus'] = False
+
+# 2. 准备数据与颜色映射
+items = ['口红', '面膜', '隔离', '防晒', '精华', '面霜', '眼影', '气垫']
+sales = [9221, 5102, 6571, 5760, 6321, 8612, 2645, 5321]
+
+# 严格提取原图中每根柱子的颜色
+colors = [
+    '#6baed6', # 口红 (浅蓝)
+    '#3b9c9c', # 面膜 (蓝绿)
+    '#e06c4e', # 隔离 (橙红)
+    '#f4c242', # 防晒 (黄色)
+    '#00a0e9', # 精华 (亮蓝)
+    '#1f78b4', # 面霜 (深蓝)
+    '#4d5bce', # 眼影 (紫蓝)
+    '#3f4a9e'  # 气垫 (靛蓝)
+]
+
+# 3. 创建画布并设置背景色
+bg_color = '#1e213a'        # 深蓝背景
+text_color = '#ffffff'      # 白色主文字
+sub_text_color = '#b0b4c6'  # 浅灰副文字/注释
+grid_color = '#3b3e5a'      # 虚线网格颜色
+
+fig, ax = plt.subplots(figsize=(10, 6.5), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 关键：设置坐标轴边界（给左侧留出 -0.8，防止柱子覆盖Y轴）
+ax.set_xlim(-0.8, len(items) - 0.2)
+ax.set_ylim(0, 11000)
+
+# 4. 绘制单色柱状图
+# 绘制柱子，zorder=3 确保显示在网格线之上
+bars = ax.bar(range(len(items)), sales, width=0.45, color=colors, zorder=3)
+
+# 5. 绘制“同色背景框 + 小倒三角”的数据标签
+for i, (val, color) in enumerate(zip(sales, colors)):
+    # 计算标签框位置
+    box_y = val + 200      # 标签框底部距离柱子顶部的距离
+    box_height = 400       # 标签框高度
+    box_width = 0.45       # 标签框宽度
+    
+    # 绘制带颜色的圆角矩形背景
+    label_box = FancyBboxPatch((i - box_width/2, box_y), box_width, box_height,
+                               boxstyle="round,pad=0.05,rounding_size=0.1",
+                               ec="none", fc=color, zorder=5)
+    ax.add_patch(label_box)
+    
+    # 添加数值文字
+    ax.text(i, box_y + box_height/2, str(val), 
+            ha='center', va='center', color='#ffffff', fontsize=11, zorder=6)
+    
+    # 绘制指向柱子顶部的小倒三角（颜色与柱子一致）
+    triangle = Polygon([(i - 0.06, box_y), (i + 0.06, box_y), (i, val + 50)],
+                       closed=True, color=color, zorder=4)
+    ax.add_patch(triangle)
+
+# 6. 添加标题、副标题和底部注释
+fig.text(0.08, 0.88, '2021年商品销量情况', 
+         fontsize=24, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.81, '口红销量最好达9221，是眼影最低值2645近3.5倍', 
+         fontsize=15, color=sub_text_color, ha='left')
+fig.text(0.08, 0.04, '*注：数据来源于公司销售系统，统计日期截至2022.08.31', 
+         fontsize=10, color=sub_text_color, ha='left')
+
+# 7. 设置坐标轴刻度和网格线
+# Y轴刻度
+y_ticks = [0, 2000, 4000, 6000, 8000, 10000]
+ax.set_yticks(y_ticks)
+ax.set_yticklabels([str(y) for y in y_ticks], color=text_color, fontsize=11)
+
+# 横向虚线网格线
+ax.yaxis.grid(True, linestyle='--', color=grid_color, linewidth=1.5, zorder=0)
+
+# X轴标签
+ax.set_xticks(range(len(items)))
+ax.set_xticklabels(items, color=text_color, fontsize=13)
+ax.tick_params(axis='x', length=0, pad=10)
+ax.tick_params(axis='y', length=0, pad=10)
+
+# 8. 隐藏多余边框线
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False) # 隐藏左侧竖线，保留数字刻度
+ax.spines['bottom'].set_color(grid_color)
+ax.spines['bottom'].set_linewidth(1.5)
+
+# 9. 调整布局并显示/保存
+fig.subplots_adjust(left=0.1, right=0.92, top=0.75, bottom=0.12)
+
+plt.show() 

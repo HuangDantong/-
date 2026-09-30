@@ -1,0 +1,75 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 1. 环境配置
+plt.rcParams['font.sans-serif'] = ['Microsoft YaHei'] # 使用微软雅黑，自带粗体支持
+plt.rcParams['axes.unicode_minus'] = False   # 解决负号显示问题
+
+# 2. 准备数据
+regions = ['华东', '西北', '东北', '华北', '华南']
+sales_2022 = [1215, 1321, 1426, 1531, 2238]
+sales_2021 = [1003, 1265, 1531, 1436, 2066]
+
+y_pos = np.arange(len(regions))
+
+# 3. 创建画布并设置背景色
+bg_color = '#1a1e36'        # 深蓝背景
+blue_color = '#0099e5'      # 2022年柱子颜色（亮蓝）
+red_color = '#e04f66'       # 2021年柱子颜色（粉红）
+text_color = '#ffffff'      # 白色文字
+sub_text_color = '#b0b4c6'  # 浅灰文字/注释
+
+fig, ax = plt.subplots(figsize=(12, 8), facecolor=bg_color)
+ax.set_facecolor(bg_color)
+
+# 4. 绘制左侧与右侧条形（关键修改：利用 left 参数实现中间分离）
+bar_height = 0.35
+gap = 250  # 【核心参数】中间留白的宽度
+
+# 绘制左侧柱子：left=-gap，宽度为负值，柱子从 -gap 向左延伸
+bars_2022 = ax.barh(y_pos, [-v for v in sales_2022], left=-gap, height=bar_height, color=blue_color, zorder=3)
+
+# 绘制右侧柱子：left=gap，宽度为正值，柱子从 gap 向右延伸
+bars_2021 = ax.barh(y_pos, sales_2021, left=gap, height=bar_height, color=red_color, zorder=3)
+
+# 5. 添加柱内数据标签
+# 左侧标签（文字位于条形内部，靠近中心留白处）
+for i, v in enumerate(sales_2022):
+    # x坐标为 -gap - 100，保证文字紧贴留白内侧
+    ax.text(-gap - 100, i, str(v), ha='right', va='center', color=text_color, fontsize=11, zorder=4)
+
+# 右侧标签（文字位于条形内部，靠近中心留白处）
+for i, v in enumerate(sales_2021):
+    # x坐标为 gap + 100
+    ax.text(gap + 100, i, str(v), ha='left', va='center', color=text_color, fontsize=11, zorder=4)
+
+# 6. 添加中间的区域名称（完美落在 gap 区间内）
+for i, region in enumerate(regions):
+    ax.text(0, i, region, ha='center', va='center', color=text_color, fontsize=13, zorder=5)
+
+# 7. 添加图表上方的“2022”和“2021”标识
+ax.text(-1500, 4.8, '2022', color=blue_color, fontsize=14, ha='center', va='center')
+ax.text(1500, 4.8, '2021', color=red_color, fontsize=14, ha='center', va='center')
+
+# 8. 添加主标题、副标题和底部注释
+fig.text(0.08, 0.88, '2022年上半年各区域对比去年销量', 
+         fontsize=24, color=text_color, fontweight='bold', ha='left')
+fig.text(0.08, 0.83, '2022年整体销量高于2021年，只有东北区域较2021有所下降', 
+         fontsize=15, color=sub_text_color, ha='left')
+fig.text(0.08, 0.05, '*注：数据来源于公司销售系统，统计日期截至2022.06.30', 
+         fontsize=11, color=sub_text_color, ha='left')
+
+# 9. 设置坐标轴样式（隐藏所有边框和刻度）
+ax.set_xlim(-3000, 3000)  # 调整X轴范围，适应左右柱子和中间留白
+ax.set_ylim(-0.8, 5.5)    # 调整Y轴范围
+
+ax.set_xticks([])
+ax.set_yticks([])
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+
+# 10. 调整布局并弹窗显示
+fig.subplots_adjust(left=0.05, right=0.95, top=0.75, bottom=0.12)
+plt.show()
