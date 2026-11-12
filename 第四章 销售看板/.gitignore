@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+
+# 比对基准（Excel 导出的原图）只在本地使用，不随复刻成果提交
+reference/
