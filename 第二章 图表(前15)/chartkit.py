@@ -12,6 +12,7 @@
    靠算容易差几个像素，量一下最省事。
 """
 
+import json
 import os
 import re
 import zipfile
@@ -64,6 +65,24 @@ AXIS_FONTS = [pick_font(["Calibri"]),
 # --------------------------------------------------------------------------
 
 
+_META = None
+
+
+def offline_meta():
+    """没有课程 xlsx 时使用的离线元数据（data/chart_meta.json）。
+
+    chart_meta.json 预先存好了 15 张图的画布高度、plotArea manualLayout 和
+    userShapes，因此只 clone 仓库、没有原始工作簿时脚本也能跑。
+    """
+    global _META
+    if _META is None:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            "data", "chart_meta.json")
+        with open(path, encoding="utf-8") as handle:
+            _META = json.load(handle)
+    return _META
+
+
 def _read(part):
     with zipfile.ZipFile(XLSX) as archive:
         return archive.read(part).decode("utf-8")
@@ -79,7 +98,10 @@ def user_shapes(number):
 
     只有一层的 cdr:sp / cdr:cxnSp，够用；标题、副标题、脚注、标注框都在这里。
     """
-    rels = _read("xl/charts/_rels/chart%d.xml.rels" % number)
+    try:
+        rels = _read("xl/charts/_rels/chart%d.xml.rels" % number)
+    except OSError:
+        return offline_meta()["user_shapes"].get(str(number), [])
     match = re.search(r'Target="\.\./drawings/(drawing\d+\.xml)"', rels)
     if not match:
         return []
@@ -177,7 +199,10 @@ def paragraphs_of(tx_body):
 
 def manual_layout(number):
     """绘图区在图表区里的相对位置，取自 plotArea/layout/manualLayout。"""
-    root = chart_root(number)
+    try:
+        root = chart_root(number)
+    except OSError:
+        return offline_meta()["layouts"].get(str(number))
     plot = root.find(C + "chart").find(C + "plotArea")
     layout = plot.find(C + "layout")
     if layout is None:
@@ -229,8 +254,11 @@ def height_px_of(number):
     """Excel 里图表对象的高度(pt) × 2，即导出 PNG 的像素高。"""
     meta = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         "reference", "chart%d_meta.txt" % number)
-    with open(meta, encoding="utf-8") as handle:
-        match = re.search(r"w=([\d.]+)pt h=([\d.]+)pt", handle.read())
+    try:
+        with open(meta, encoding="utf-8") as handle:
+            match = re.search(r"w=([\d.]+)pt h=([\d.]+)pt", handle.read())
+    except OSError:
+        return offline_meta()["sizes"].get(str(number))
     return int(round(float(match.group(2)) * PX_PER_PT))
 
 

@@ -1,0 +1,3010 @@
+{
+ "layouts": {
+  "1": {
+   "h": "0.5254068241469817",
+   "layoutTarget": "inner",
+   "w": "0.7602323606607998",
+   "x": "0.14399451906746949",
+   "xMode": "edge",
+   "y": "0.31885801039575934",
+   "yMode": "edge"
+  },
+  "10": {
+   "h": "0.4701066067940679",
+   "layoutTarget": "inner",
+   "w": "0.84359618650609847",
+   "x": "0.11689671144048171",
+   "xMode": "edge",
+   "y": "0.2923847646798442",
+   "yMode": "edge"
+  },
+  "11": {
+   "h": "0.54677535345127803",
+   "layoutTarget": "inner",
+   "w": "0.8652580198002231",
+   "x": "8.0845188119866157E-2",
+   "xMode": "edge",
+   "y": "0.27727852489010746",
+   "yMode": "edge"
+  },
+  "12": {
+   "h": "0.48976042613837895",
+   "layoutTarget": "inner",
+   "w": "0.81350702485718696",
+   "x": "0.13012042612320518",
+   "xMode": "edge",
+   "y": "0.3588933815705469",
+   "yMode": "edge"
+  },
+  "13": {
+   "h": "0.56470093572455782",
+   "layoutTarget": "inner",
+   "w": "0.42248764860274818",
+   "x": "0.29733460707117493",
+   "xMode": "edge",
+   "y": "0.27674437501209154",
+   "yMode": "edge"
+  },
+  "14": null,
+  "15": null,
+  "2": {
+   "h": "0.59987055911086651",
+   "layoutTarget": "inner",
+   "w": "0.90466463398940655",
+   "x": "5.8831442025629149E-2",
+   "xMode": "edge",
+   "y": "0.23438164632405159",
+   "yMode": "edge"
+  },
+  "3": {
+   "h": "0.53646680816245673",
+   "layoutTarget": "inner",
+   "w": "0.78899722093561842",
+   "x": "0.13502238690751892",
+   "xMode": "edge",
+   "y": "0.29172025230356308",
+   "yMode": "edge"
+  },
+  "4": {
+   "h": "0.53768486197969612",
+   "layoutTarget": "inner",
+   "w": "0.78620522618496225",
+   "x": "0.14203431372549019",
+   "xMode": "edge",
+   "y": "0.29873290354927151",
+   "yMode": "edge"
+  },
+  "5": {
+   "h": "0.58061518247851684",
+   "layoutTarget": "inner",
+   "w": "0.80882349251649921",
+   "x": "8.8235311146231121E-2",
+   "xMode": "edge",
+   "y": "0.26426422855734538",
+   "yMode": "edge"
+  },
+  "6": {
+   "h": "0.59845576122345734",
+   "layoutTarget": "inner",
+   "w": "0.94607843137254899",
+   "x": "3.4313725490196081E-2",
+   "xMode": "edge",
+   "y": "0.28485616938848751",
+   "yMode": "edge"
+  },
+  "7": {
+   "h": "0.60875166161639771",
+   "layoutTarget": "inner",
+   "w": "0.81654624054346148",
+   "x": "0.12708121043693066",
+   "xMode": "edge",
+   "y": "0.28142424339873146",
+   "yMode": "edge"
+  },
+  "8": {
+   "h": "0.54477585977600662",
+   "layoutTarget": "inner",
+   "w": "0.85539215686274506",
+   "x": "6.3725490196078427E-2",
+   "xMode": "edge",
+   "y": "0.29142189259162665",
+   "yMode": "edge"
+  },
+  "9": {
+   "h": "0.71789530120960543",
+   "layoutTarget": "inner",
+   "w": "0.74318275115993693",
+   "x": "0.16559865007057803",
+   "xMode": "edge",
+   "y": "0.22376064832968201",
+   "yMode": "edge"
+  }
+ },
+ "sizes": {
+  "1": 618,
+  "10": 588,
+  "11": 616,
+  "12": 590,
+  "13": 622,
+  "14": 617,
+  "15": 372,
+  "2": 594,
+  "3": 616,
+  "4": 616,
+  "5": 588,
+  "6": 588,
+  "7": 390,
+  "8": 588,
+  "9": 645
+ },
+ "user_shapes": {
+  "1": [
+   {
+    "extent_pt": [
+     366.00047244094486,
+     61.24929133858268
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     24.62543307086614,
+     19.000708661417324
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "3"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "月各区域销量分布"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "东北销量最多占比总销量的"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "22%"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "，华南销量最低"
+      }
+     ]
+    ],
+    "rel": [
+     0.06036,
+     0.06209,
+     0.95742,
+     0.26225
+    ]
+   },
+   {
+    "extent_pt": [
+     326.99976377952754,
+     19.87779527559055
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     17.127322834645668,
+     280.3732283464567
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.03.31"
+      }
+     ]
+    ],
+    "rel": [
+     0.04198,
+     0.91625,
+     0.84345,
+     0.98121
+    ]
+   }
+  ],
+  "10": [
+   {
+    "extent_pt": [
+     261.1711811023622,
+     15.708582677165355
+    ],
+    "fill": [
+     "#66CBDD",
+     1.0
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 1",
+    "offset_pt": [
+     38.04700787401575,
+     255.04149606299214
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": null,
+       "face": null,
+       "size_pt": 10.0,
+       "text": "2021"
+      }
+     ]
+    ],
+    "rel": [
+     0.09325,
+     0.83552,
+     0.73338,
+     0.88698
+    ]
+   },
+   {
+    "extent_pt": [
+     95.81133858267717,
+     16.838976377952754
+    ],
+    "fill": [
+     "#F5C353",
+     1.0
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 2",
+    "offset_pt": [
+     302.81370078740156,
+     254.66110236220473
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": null,
+       "face": null,
+       "size_pt": 10.0,
+       "text": "2022"
+      }
+     ]
+    ],
+    "rel": [
+     0.74219,
+     0.83427,
+     0.97702,
+     0.88943
+    ]
+   },
+   {
+    "extent_pt": [
+     0.12850393700787402,
+     138.0
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": [
+      "#E66B4C",
+      1.0
+     ],
+     "head": null,
+     "width_pt": null
+    },
+    "name": "直接连接符 3",
+    "offset_pt": [
+     317.8715748031496,
+     94.50007874015748
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.7791,
+     0.30958,
+     0.77941,
+     0.76167
+    ]
+   },
+   {
+    "extent_pt": [
+     366.00047244094486,
+     71.24834645669291
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     14.499606299212598,
+     7.0009448818897635
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "化妆品品类月度销量走势"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "2022"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "年销量迅速增加，"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "1"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "月最高，销量达到"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "3782"
+      }
+     ]
+    ],
+    "rel": [
+     0.03554,
+     0.02294,
+     0.9326,
+     0.25634
+    ]
+   },
+   {
+    "extent_pt": [
+     326.99976377952754,
+     19.87779527559055
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     11.50007874015748,
+     277.75
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.03.31"
+      }
+     ]
+    ],
+    "rel": [
+     0.02819,
+     0.90991,
+     0.82966,
+     0.97503
+    ]
+   }
+  ],
+  "11": [
+   {
+    "extent_pt": [
+     366.00047244094486,
+     71.24897637795276
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     20.12503937007874,
+     10.37503937007874
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "2022"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "年"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "1-8"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "月公司计划完成率"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "公司整体完成率"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "55%"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "，"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "4"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "月和"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "8"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "月超过"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "70%"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "，"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "2"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "月和"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "6"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "月较低未过半"
+      }
+     ]
+    ],
+    "rel": [
+     0.0493,
+     0.03552,
+     0.94595,
+     0.27941
+    ]
+   },
+   {
+    "extent_pt": [
+     326.9990551181102,
+     19.879055118110237
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     22.00023622047244,
+     264.9988188976378
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.08.31"
+      }
+     ]
+    ],
+    "rel": [
+     0.0539,
+     0.90714,
+     0.855,
+     0.97519
+    ]
+   }
+  ],
+  "12": [
+   {
+    "extent_pt": [
+     366.00047244094486,
+     65.30826771653544
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     19.000866141732285,
+     9.603779527559055
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "2022"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "年上半年各月同比去年销量"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "上半年同比去年增长明显，"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "5"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "月份同比增长最多，增长近"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "40%"
+      }
+     ]
+    ],
+    "rel": [
+     0.04657,
+     0.03146,
+     0.94363,
+     0.24541
+    ]
+   },
+   {
+    "extent_pt": [
+     326.99976377952754,
+     18.22031496062992
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     18.625905511811023,
+     278.9475590551181
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.06.30"
+      }
+     ]
+    ],
+    "rel": [
+     0.04565,
+     0.91383,
+     0.84712,
+     0.97352
+    ]
+   }
+  ],
+  "13": [
+   {
+    "extent_pt": [
+     121.44338582677166,
+     59.12496062992126
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": null,
+    "name": "文本框 1",
+    "offset_pt": [
+     145.93338582677166,
+     131.1607874015748
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 36.0,
+       "text": "85%"
+      }
+     ]
+    ],
+    "rel": [
+     0.35768,
+     0.42968,
+     0.65534,
+     0.62338
+    ]
+   },
+   {
+    "extent_pt": [
+     75.0,
+     21.37503937007874
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 19",
+    "offset_pt": [
+     167.5,
+     191.5
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 11.0,
+       "text": "目标完成率"
+      }
+     ]
+    ],
+    "rel": [
+     0.41054,
+     0.62735,
+     0.59436,
+     0.69738
+    ]
+   },
+   {
+    "extent_pt": [
+     366.00047244094486,
+     71.24842519685039
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     17.12488188976378,
+     13.00015748031496
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "2022"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "年上半年目标完成率"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "6"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "月"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "30"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "日销售目标总体完成率达到"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "85%"
+      }
+     ]
+    ],
+    "rel": [
+     0.04197,
+     0.04259,
+     0.93903,
+     0.276
+    ]
+   },
+   {
+    "extent_pt": [
+     326.99976377952754,
+     19.87795275590551
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     14.876377952755906,
+     278.12496062992125
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统"
+      }
+     ]
+    ],
+    "rel": [
+     0.03646,
+     0.91114,
+     0.83793,
+     0.97626
+    ]
+   }
+  ],
+  "14": [
+   {
+    "extent_pt": [
+     174.1071653543307,
+     174.1071653543307
+    ],
+    "fill": null,
+    "geom": "ellipse",
+    "kind": "sp",
+    "line": {
+     "fill": [
+      "#0070C0",
+      1.0
+     ],
+     "head": null,
+     "width_pt": 1.75
+    },
+    "name": "椭圆 1",
+    "offset_pt": [
+     4.429133858267717,
+     5.563779527559055
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.02404,
+     0.0302,
+     0.96898,
+     0.97514
+    ]
+   },
+   {
+    "extent_pt": [
+     111.0,
+     40.5
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": null,
+    "name": "文本框 2",
+    "offset_pt": [
+     47.25,
+     74.25007874015748
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 40.0,
+       "text": "65%"
+      }
+     ]
+    ],
+    "rel": [
+     0.23813,
+     0.3742,
+     0.79753,
+     0.5783
+    ]
+   }
+  ],
+  "15": [],
+  "2": [
+   {
+    "extent_pt": [
+     334.60488188976376,
+     57.5303937007874
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     19.918582677165354,
+     12.915354330708661
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "3"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "月各区域销量分布"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "东北销量最多占比总销量的"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "22%"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "，华南销量最低"
+      }
+     ]
+    ],
+    "rel": [
+     0.04882,
+     0.04231,
+     0.86893,
+     0.23078
+    ]
+   },
+   {
+    "extent_pt": [
+     328.5093700787402,
+     19.80456692913386
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     15.685433070866141,
+     278.9914960629921
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": " *"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.03.31"
+      }
+     ]
+    ],
+    "rel": [
+     0.03844,
+     0.91398,
+     0.84361,
+     0.97886
+    ]
+   },
+   {
+    "extent_pt": [
+     72.84133858267717,
+     19.28503937007874
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 1",
+    "offset_pt": [
+     323.90866141732283,
+     110.83968503937008
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "#FFC000",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "平均值："
+      },
+      {
+       "bold": false,
+       "color": [
+        "#FFC000",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2656"
+      }
+     ]
+    ],
+    "rel": [
+     0.79389,
+     0.36311,
+     0.97243,
+     0.42629
+    ]
+   }
+  ],
+  "3": [
+   {
+    "extent_pt": [
+     29.881811023622046,
+     15.468740157480315
+    ],
+    "fill": [
+     "#0070C0",
+     0.2
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 10",
+    "offset_pt": [
+     291.4931496062992,
+     134.90622047244094
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.71444,
+     0.44195,
+     0.78768,
+     0.49263
+    ]
+   },
+   {
+    "extent_pt": [
+     29.881811023622046,
+     15.468740157480315
+    ],
+    "fill": [
+     "#0070C0",
+     0.2
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 11",
+    "offset_pt": [
+     73.75,
+     138.99976377952757
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.18076,
+     0.45536,
+     0.254,
+     0.50604
+    ]
+   },
+   {
+    "extent_pt": [
+     326.99976377952754,
+     19.87488188976378
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     17.500866141732285,
+     278.3761417322835
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.03.31"
+      }
+     ]
+    ],
+    "rel": [
+     0.04289,
+     0.91196,
+     0.84436,
+     0.97707
+    ]
+   },
+   {
+    "extent_pt": [
+     372.87496062992125,
+     57.74251968503937
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     20.87496062992126,
+     10.37503937007874
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "3"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "月商品销量对比"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "防晒销量最多，"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "3"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "月销量"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "856"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "；面膜最少，"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "3"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "月销量"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 14.0,
+       "text": "523"
+      }
+     ]
+    ],
+    "rel": [
+     0.05116,
+     0.03399,
+     0.96507,
+     0.22315
+    ]
+   },
+   {
+    "extent_pt": [
+     0.37496062992125984,
+     16.87503937007874
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": null,
+     "head": "oval",
+     "width_pt": null
+    },
+    "name": "直接连接符 23",
+    "offset_pt": [
+     81.37496062992126,
+     147.37496062992125
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.19945,
+     0.4828,
+     0.20037,
+     0.53808
+    ]
+   },
+   {
+    "extent_pt": [
+     29.881889763779526,
+     15.470078740157481
+    ],
+    "fill": [
+     "#0070C0",
+     0.2
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 26",
+    "offset_pt": [
+     128.87496062992125,
+     159.99905511811025
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.31587,
+     0.52416,
+     0.38911,
+     0.57484
+    ]
+   },
+   {
+    "extent_pt": [
+     0.37496062992125984,
+     16.87503937007874
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": null,
+     "head": "oval",
+     "width_pt": null
+    },
+    "name": "直接连接符 27",
+    "offset_pt": [
+     134.87503937007875,
+     170.12511811023623
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.33058,
+     0.55733,
+     0.3315,
+     0.61261
+    ]
+   },
+   {
+    "extent_pt": [
+     0.0,
+     13.62496062992126
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": null,
+     "head": "oval",
+     "width_pt": null
+    },
+    "name": "直接连接符 28",
+    "offset_pt": [
+     188.87503937007875,
+     151.75
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.46293,
+     0.49713,
+     0.46293,
+     0.54177
+    ]
+   },
+   {
+    "extent_pt": [
+     0.0,
+     13.62496062992126
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": null,
+     "head": "oval",
+     "width_pt": null
+    },
+    "name": "直接连接符 30",
+    "offset_pt": [
+     243.12503937007875,
+     124.25
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.59589,
+     0.40704,
+     0.59589,
+     0.45168
+    ]
+   },
+   {
+    "extent_pt": [
+     0.0,
+     13.62496062992126
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": null,
+     "head": "oval",
+     "width_pt": null
+    },
+    "name": "直接连接符 31",
+    "offset_pt": [
+     297.87503937007875,
+     143.0
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.73009,
+     0.46847,
+     0.73009,
+     0.5131
+    ]
+   },
+   {
+    "extent_pt": [
+     0.0,
+     13.62496062992126
+    ],
+    "fill": null,
+    "geom": "line",
+    "kind": "cxnSp",
+    "line": {
+     "fill": null,
+     "head": "oval",
+     "width_pt": null
+    },
+    "name": "直接连接符 32",
+    "offset_pt": [
+     350.7500787401575,
+     134.0
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.85968,
+     0.43898,
+     0.85968,
+     0.48362
+    ]
+   },
+   {
+    "extent_pt": [
+     29.881811023622046,
+     15.468740157480315
+    ],
+    "fill": [
+     "#0070C0",
+     0.2
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 33",
+    "offset_pt": [
+     182.12503937007875,
+     142.75
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.44638,
+     0.46765,
+     0.51962,
+     0.51833
+    ]
+   },
+   {
+    "extent_pt": [
+     29.881811023622046,
+     15.468740157480315
+    ],
+    "fill": [
+     "#0070C0",
+     0.2
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 34",
+    "offset_pt": [
+     237.25,
+     115.75
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.5815,
+     0.3792,
+     0.65473,
+     0.42987
+    ]
+   },
+   {
+    "extent_pt": [
+     29.881811023622046,
+     15.468740157480315
+    ],
+    "fill": [
+     "#0070C0",
+     0.2
+    ],
+    "geom": "roundRect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": null
+    },
+    "name": "矩形: 圆角 35",
+    "offset_pt": [
+     343.37503937007875,
+     125.87503937007874
+    ],
+    "paragraphs": [],
+    "rel": [
+     0.84161,
+     0.41237,
+     0.91485,
+     0.46304
+    ]
+   }
+  ],
+  "4": [
+   {
+    "extent_pt": [
+     359.2500787401575,
+     66.4896062992126
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     19.5,
+     15.635511811023623
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "2021"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "年商品销量情况"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "口红销量最好达"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "9221"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "，是眼影最低值"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "2645"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "近"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "3.5"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "倍"
+      }
+     ]
+    ],
+    "rel": [
+     0.04779,
+     0.04899,
+     0.92831,
+     0.25734
+    ]
+   },
+   {
+    "extent_pt": [
+     326.99976377952754,
+     19.87511811023622
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     16.252913385826773,
+     293.7487401574803
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.08.31"
+      }
+     ]
+    ],
+    "rel": [
+     0.03984,
+     0.92048,
+     0.84131,
+     0.98276
+    ]
+   }
+  ],
+  "5": [
+   {
+    "extent_pt": [
+     382.2507874015748,
+     57.878740157480316
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     15.999133858267717,
+     13.749370078740158
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "2021"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "年至今季度销售额"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "("
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "万"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": ")"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "和利润额"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "("
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "万"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": ")"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "2022"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "年第二季度销售额首次出现下降，降幅达到"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "15%"
+      }
+     ]
+    ],
+    "rel": [
+     0.03921,
+     0.04719,
+     0.9761,
+     0.24583
+    ]
+   },
+   {
+    "extent_pt": [
+     327.0008661417323,
+     19.87535433070866
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     11.87503937007874,
+     265.37496062992125
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.06.30"
+      }
+     ]
+    ],
+    "rel": [
+     0.02911,
+     0.91077,
+     0.83058,
+     0.97898
+    ]
+   },
+   {
+    "extent_pt": [
+     40.12503937007874,
+     12.37503937007874
+    ],
+    "fill": [
+     "#1A1E43",
+     1.0
+    ],
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": [
+      "#0070C0",
+      1.0
+     ],
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 6",
+    "offset_pt": [
+     325.75,
+     150.25
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 8.0,
+       "text": "销售额"
+      }
+     ]
+    ],
+    "rel": [
+     0.79841,
+     0.51566,
+     0.89675,
+     0.55813
+    ]
+   },
+   {
+    "extent_pt": [
+     40.12503937007874,
+     12.37503937007874
+    ],
+    "fill": [
+     "#1A1E43",
+     1.0
+    ],
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": [
+      "#E74E69",
+      1.0
+     ],
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 7",
+    "offset_pt": [
+     325.37503937007875,
+     172.0
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 8.0,
+       "text": "利润额"
+      }
+     ]
+    ],
+    "rel": [
+     0.79749,
+     0.5903,
+     0.89583,
+     0.63278
+    ]
+   }
+  ],
+  "6": [
+   {
+    "extent_pt": [
+     366.00456692913383,
+     63.97141732283465
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     19.3748031496063,
+     11.501496062992127
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "2022"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "年上半年各区域对比去年销量"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "2022"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "年整体销量高于"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "2021"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "年，只有东北区域较"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "2021"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "有所下降"
+      }
+     ]
+    ],
+    "rel": [
+     0.04749,
+     0.03947,
+     0.94456,
+     0.25902
+    ]
+   },
+   {
+    "extent_pt": [
+     327.00377952755906,
+     21.966771653543308
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     17.873700787401575,
+     264.9996062992126
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.06.30"
+      }
+     ]
+    ],
+    "rel": [
+     0.04381,
+     0.90948,
+     0.84529,
+     0.98487
+    ]
+   },
+   {
+    "extent_pt": [
+     187.12496062992125,
+     15.0
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 2",
+    "offset_pt": [
+     133.0,
+     71.12503937007874
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "#0070C0",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 11.0,
+       "text": "2022"
+      },
+      {
+       "bold": false,
+       "color": [
+        "#0070C0",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 11.0,
+       "text": "   "
+      },
+      {
+       "bold": false,
+       "color": null,
+       "face": null,
+       "size_pt": 11.0,
+       "text": "                              "
+      },
+      {
+       "bold": false,
+       "color": [
+        "#F94C66",
+        1.0
+       ],
+       "face": null,
+       "size_pt": 11.0,
+       "text": "2021"
+      }
+     ]
+    ],
+    "rel": [
+     0.32598,
+     0.2441,
+     0.78462,
+     0.29558
+    ]
+   }
+  ],
+  "7": [
+   {
+    "extent_pt": [
+     366.00456692913383,
+     63.97141732283465
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     19.00007874015748,
+     15.25
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "2021"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 18.0,
+       "text": "年各区域销量及同比情况"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "各区域商品销量同比去年均有下降，其中华南下降最多，同比下降"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 11.0,
+       "text": "20.8%"
+      }
+     ]
+    ],
+    "rel": [
+     0.04657,
+     0.05234,
+     0.94364,
+     0.27189
+    ]
+   },
+   {
+    "extent_pt": [
+     327.0038582677165,
+     21.966692913385828
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     14.875669291338582,
+     264.62535433070866
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.01.01"
+      }
+     ]
+    ],
+    "rel": [
+     0.03646,
+     0.9082,
+     0.83794,
+     0.98358
+    ]
+   }
+  ],
+  "8": [
+   {
+    "extent_pt": [
+     378.5000787401575,
+     66.50007874015748
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     16.74992125984252,
+     13.75
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "2022"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 20.0,
+       "text": "年商品对比去年销售情况"
+      }
+     ],
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "商品整体比去年销量有所下降，其中隔离下降最多，下降"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 12.0,
+       "text": "33%"
+      }
+     ]
+    ],
+    "rel": [
+     0.04105,
+     0.04309,
+     0.96875,
+     0.25147
+    ]
+   },
+   {
+    "extent_pt": [
+     327.0038582677165,
+     21.968582677165355
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 12",
+    "offset_pt": [
+     11.50007874015748,
+     291.24944881889763
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "*"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "注：数据来源于公司销售系统，统计日期截至"
+      },
+      {
+       "bold": false,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 8.0,
+       "text": "2022.01.01"
+      }
+     ]
+    ],
+    "rel": [
+     0.02819,
+     0.91265,
+     0.82967,
+     0.98149
+    ]
+   }
+  ],
+  "9": [
+   {
+    "extent_pt": [
+     432.37503937007875,
+     34.50007874015748
+    ],
+    "fill": null,
+    "geom": "rect",
+    "kind": "sp",
+    "line": {
+     "fill": null,
+     "head": null,
+     "width_pt": 0.75
+    },
+    "name": "文本框 11",
+    "offset_pt": [
+     0.75,
+     0.37503937007874016
+    ],
+    "paragraphs": [
+     [
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 16.0,
+       "text": "2022"
+      },
+      {
+       "bold": true,
+       "color": [
+        "scheme:bg1",
+        1.0
+       ],
+       "face": "微软雅黑",
+       "size_pt": 16.0,
+       "text": "年化妆品类目采购项目进度"
+      }
+     ]
+    ],
+    "rel": [
+     0.00173,
+     0.00129,
+     0.99827,
+     0.11969
+    ]
+   }
+  ]
+ }
+}

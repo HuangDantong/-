@@ -1,5 +1,8 @@
 # 第二章 图表复刻（Python / matplotlib）
 
+> [← 返回总目录](../README.md)
+
+
 用 Python 逐像素复刻 `第二章 图表(前15).xlsx` 里的 15 张图表。所有样式参数都从
 xlsx 内部的图表 XML 里解出来，不是目测估计，并用 Excel COM 把原图导出成 PNG
 作为比对基准。
@@ -35,12 +38,15 @@ inspect_chart_xml.py N     把 chartN.xml 压成可读的样式规格（--raw �
 inspect_usershapes.py N    列出图表 userShapes 里的标题/副标题/脚注/标注框
 compare_reference.py N     与原图做像素级比对（--diff 时才落盘对照图）
 chartN_*.py + .png         15 张图的脚本与输出
+data/chart_meta.json       离线元数据：画布高度 / manualLayout / userShapes
 reference/
   chartN_excel.png         原图（Excel 导出，比对基准）
   chartN_meta.txt          图表对象的宽高/位置，用来核对画布大小
 ```
 
 ## 运行
+
+没有原始 xlsx 也能跑：脚本会回退到 `data/chart_meta.json` 里的布局参数。
 
 ```bash
 pip install matplotlib numpy pillow pywin32

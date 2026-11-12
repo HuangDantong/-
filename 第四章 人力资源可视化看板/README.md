@@ -1,5 +1,8 @@
 # 第四章 人力资源可视化看板 · Python / matplotlib 复刻
 
+> [← 返回总目录](../README.md)
+
+
 复刻 `第四章 人力资源可视化看板.xlsx` 右侧的「公司人员结构看板」。原表用
 6 个图表对象 + 2 个文本框拼成一张 2×3 的深色看板；这里用 matplotlib 按原图
 尺寸 1598 × 808 px 逐块重绘，人数从工作表的统计区域读取。
@@ -43,12 +46,15 @@
 ```
 dashboard.py             看板绘制脚本（读取统计区 + 布局 + 样式）
 dashboard.png            复刻结果（1598 × 808）
+data/summary.json        预聚合的人数统计（无 xlsx 时自动使用）
 compare_reference.py     与 Excel 导出图逐像素比对
 export_reference.py      用 Excel COM 导出比对基准（PDF + 6 张图表）
 reference/               比对基准，只在本地使用（已 gitignore）
 ```
 
 ## 运行
+
+仓库自带 `data/summary.json`，没有课程 xlsx 也能直接运行。
 
 ```bash
 pip install matplotlib numpy pillow openpyxl

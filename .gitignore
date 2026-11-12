@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# 本地比对基准（Excel 导出的原图）
+reference/
+
+# 原始课程文件与其它课程资料（含教材 PPT / 源工作簿）
+*.pdf
+*.zip
+*.xlsm
+*.xlsx
+*.docx
+*.pptx
+~$*
+
+# 教材配套资料目录
+《Excel数据可视化 - 从图表到数据大屏》-清华-郭宏远/
+
+# 旧版实现：已从 git 索引移除，本地保留
+可视化代码/
+
+# 独立维护的项目
+olist-analysis/
+
+# 其它课程的大作业材料（如需公开可自行取消忽略）
+大作业/

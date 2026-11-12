@@ -14,6 +14,7 @@
 
 import argparse
 import io
+import json
 import os
 from collections import defaultdict
 
@@ -69,6 +70,13 @@ COST_ORDER = ["推广", "其他", "人工", "产品"]   # 与 D27:D30 一致
 
 
 def load_data():
+    # 仓库里附带了一份从原始明细算好的汇总（data/summary.json），
+    # 这样没有课程 xlsx 也能直接运行；有 xlsx 时优先现算。
+    summary = os.path.join(BASE, "data", "summary.json")
+    if not os.path.exists(XLSX) and os.path.exists(summary):
+        with open(summary, encoding="utf-8") as handle:
+            return json.load(handle)
+
     from openpyxl import load_workbook
 
     wb = load_workbook(XLSX, read_only=True, data_only=True)

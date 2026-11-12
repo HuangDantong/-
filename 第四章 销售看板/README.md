@@ -1,5 +1,8 @@
 # 第四章 销售看板 · Python / matplotlib 复刻
 
+> [← 返回总目录](../README.md)
+
+
 复刻 `第四章 销售看板参考.xlsx` 的「数据大屏」工作表。原表用 11 个图表对象、
 4 个成本圆环、若干矩形/文本框、一个日历图标和「月份」下拉框拼成一张
 1724 × 1088 的深色看板；这里用 matplotlib 逐块重绘，所有指标都从
@@ -59,6 +62,7 @@ Top3、成本、利润率都会重算；「各月销售额」面积图展示全�
 dashboard.py                 整张看板的绘制脚本（数据 + 布局 + 样式）
 dashboard.png               默认 9 月的复刻结果（1724 × 1088）
 dashboard_months.gif        12 个月循环动画，演示下拉框效果
+data/summary.json           预聚合的月度数据（无 xlsx 时自动使用）
 assets/                     从 xlsx 内提取的小图标（奖牌 ×3、日历）
   calendar.png
   medal_gold.png
@@ -70,6 +74,8 @@ reference/                  比对基准，只在本地使用（已 gitignore）
 ```
 
 ## 运行
+
+仓库自带 `data/summary.json`，没有课程 xlsx 也能直接运行；有 xlsx 时优先现算。
 
 ```bash
 pip install matplotlib numpy pillow openpyxl

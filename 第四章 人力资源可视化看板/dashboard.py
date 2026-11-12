@@ -10,6 +10,7 @@
     python dashboard.py
 """
 
+import json
 import os
 
 import matplotlib
@@ -53,6 +54,12 @@ def fs(excel_pt):
 # ---------------------------------------------------------------------------
 
 def load_data():
+    # 仓库内附带了统计结果 data/summary.json，没有课程 xlsx 也能运行
+    summary = os.path.join(BASE, "data", "summary.json")
+    if not os.path.exists(XLSX) and os.path.exists(summary):
+        with open(summary, encoding="utf-8") as handle:
+            return json.load(handle)
+
     from openpyxl import load_workbook
 
     wb = load_workbook(XLSX, read_only=True, data_only=True)
